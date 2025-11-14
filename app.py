@@ -4,8 +4,12 @@ from flask_limiter.util import get_remote_address
 import os
 from functools import wraps, lru_cache
 from pathlib import Path
+from dotenv import load_dotenv
 
 import re
+
+# Load environment variables from .env file
+load_dotenv()
 
 app = Flask(__name__)
 

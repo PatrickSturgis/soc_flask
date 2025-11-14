@@ -1,0 +1,30 @@
+# Requirements for local SOC classifier on Winston
+# Install with: pip install -r requirements_local.txt
+
+# Core dependencies
+torch>=2.0.0
+transformers>=4.35.0
+sentence-transformers>=2.2.0
+accelerate>=0.24.0
+bitsandbytes>=0.41.0  # For 8-bit and 4-bit quantization
+
+# Vector database
+chromadb>=0.4.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+tqdm>=4.65.0
+
+# Optional: For additional optimizations
+# flash-attn>=2.0.0  # Requires compatible GPU, may need special installation
+# xformers>=0.0.20  # For memory-efficient attention
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Note: If you need to run the Flask API version as well, also install:
+# Flask==2.2.5
+# Flask-Limiter==3.8.0
+# gunicorn==22.0.0
+# Werkzeug==2.2.2
